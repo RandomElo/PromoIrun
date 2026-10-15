@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Données locales (base SQLite) et liste perso des modèles
+data/
+config/modeles.json
+
+# Bases locales
+*.sqlite
+*.sqlite3
+*.db
+
+# Node
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+*.log
+npm-debug.log*
+
+# Éditeurs et système
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Rapports d'audit
+audits/
+
+# Configuration Claude
+.claude/

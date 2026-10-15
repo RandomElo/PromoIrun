@@ -1,0 +1,21 @@
+# Nom fixe : le volume s'appelle promo-irun_donnees quel que soit le nom du dossier
+name: promo-irun
+
+services:
+    promo-irun:
+        build: .
+        container_name: promo-irun
+        restart: unless-stopped
+        env_file: .env
+        environment:
+            - TZ=Europe/Paris
+        volumes:
+            - ./config:/app/config:ro
+            - donnees:/app/data
+        logging:
+            options:
+                max-size: "5m"
+                max-file: "2"
+
+volumes:
+    donnees:

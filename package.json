@@ -1,0 +1,27 @@
+{
+    "name": "promo-irun",
+    "version": "0.1.0",
+    "description": "Prévient sur Discord quand des modèles suivis sont en bonne promo chez i-Run",
+    "private": true,
+    "type": "module",
+    "license": "MIT",
+    "engines": {
+        "node": ">=22.18"
+    },
+    "scripts": {
+        "start": "node --env-file-if-exists=.env src/index.ts",
+        "dev": "node --env-file-if-exists=.env --watch src/index.ts",
+        "verifier": "node --env-file-if-exists=.env src/index.ts --une-fois",
+        "test-discord": "node --env-file-if-exists=.env src/test-discord.ts",
+        "graphiques": "node --env-file-if-exists=.env src/graphiques.ts",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@types/node": "^22.20.4",
+        "typescript": "^7.0.2"
+    },
+    "dependencies": {
+        "@resvg/resvg-js": "^2.6.2",
+        "echarts": "^6.1.0"
+    }
+}

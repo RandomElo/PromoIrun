@@ -1,0 +1,13 @@
+{
+    "pointures": ["42", "42.5"],
+    "genre": "homme",
+    "prixMax": 120,
+    "modeles": [
+        { "url": "https://www.i-run.fr/recherche.html?q=Nike+Vomero+Plus" },
+        { "url": "https://www.i-run.fr/recherche.html?q=Hoka+One+One+Mach+7", "prixMax": 100 },
+        {
+            "url": "https://www.i-run.fr/chaussures_homme/Running_c23/adidas_m10/adidas-adizero-Evo-SL_adidas_fiche_143747.html",
+            "remiseMin": 30
+        }
+    ]
+}
